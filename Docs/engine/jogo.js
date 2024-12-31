@@ -22,7 +22,8 @@ function posicao_aleatoria(){
         document.getElementById('mosquito').remove();
 
         if(vidas > 3){
-            alert('Terminou o Jogo')
+            
+            window.location.href ='fim_de_jogo.html'
 
         }else{
 
