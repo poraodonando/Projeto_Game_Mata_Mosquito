@@ -5,21 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <!--JavaScript-->
-
-    <script src="/Docs/engine/jogo.js"></script>
-
+    
     <!--CSS-->
-
+    
     <link rel="stylesheet" href="/Docs/estilo/estilo.css">
+    
 
-
-
+    
 </head>
 
 
 
 <body onresize="ajusta_tamanho_palco_jogo()">
+
+    <div class="painel">
+        <div class="vidas">
+
+        </div>
+
+        <div class="cronometro">Tempo restante: ?
+
+        </div>
+    </div>
+    
+    
     
 </body>
 </html>
+
+
+<!--JavaScript-->
+
+<script src="/Docs/engine/jogo.js"></script>
+
+<script>
+    
+
+    setInterval(function(){
+        posicao_aleatoria();
+    },300)
+</script>
