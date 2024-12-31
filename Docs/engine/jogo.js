@@ -24,6 +24,7 @@ var cronometro = setInterval(function(){
 
         clearInterval(cronometro);
         clearInterval(cria_mosquito);
+        window.location.href ='vitoria.html'
 
 
     }else{
