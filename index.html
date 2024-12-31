@@ -20,9 +20,11 @@
 
     <div class="painel">
         <div class="vidas">
-            <img src="Assets/Imagens/coracao_vazio.png" alt="" srcset="">
-            <img src="Assets/Imagens/coracao_cheio.png" alt="" srcset="">
-            <img src="Assets/Imagens/coracao_cheio.png" alt="" srcset="">
+            <img id="vida_1" src="Assets/Imagens/coracao_cheio.png" alt="" srcset="">
+
+            <img id="vida_2" src="Assets/Imagens/coracao_cheio.png" alt="" srcset="">
+
+            <img id="vida_3" src="Assets/Imagens/coracao_cheio.png" alt="" srcset="">
         </div>
 
         <div class="cronometro">Tempo restante: ?
@@ -45,5 +47,5 @@
 
     setInterval(function(){
         posicao_aleatoria();
-    },300)
+    },1000)
 </script>
