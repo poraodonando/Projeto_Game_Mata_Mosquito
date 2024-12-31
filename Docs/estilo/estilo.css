@@ -1,5 +1,5 @@
 body{
-    background-image: url(/Assets/Imagens/bg.jpg) ;
+    background: url(/Assets/Imagens/bg.jpg) no-repeat;
     background-size: 100%;
 }
 
@@ -38,6 +38,7 @@ body{
     position: absolute;
     width: 190px;
     padding: 10px;
+    left: 0px;
     bottom: 0px;
     border-top: solid 1px #ccc;
     background-color: #cccccc65;
