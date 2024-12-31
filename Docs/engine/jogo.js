@@ -4,6 +4,7 @@
 var altura = 0;
 var largura = 0;
 var vidas = 1;
+var tempo = 10;
 
 function ajusta_tamanho_palco_jogo(){
     altura = window.innerHeight;
@@ -12,6 +13,26 @@ function ajusta_tamanho_palco_jogo(){
 }
 
 ajusta_tamanho_palco_jogo()
+
+//Criando um Cronometro
+
+var cronometro = setInterval(function(){
+    
+    tempo -=1;
+
+    if(tempo < 0){//fluxo de vitória
+
+        clearInterval(cronometro);
+        clearInterval(cria_mosquito);
+
+
+    }else{
+
+        document.getElementById('cronometro').innerHTML = tempo
+    }
+
+},1000)
+
 
 
 function posicao_aleatoria(){

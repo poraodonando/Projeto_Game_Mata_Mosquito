@@ -27,7 +27,7 @@
             <img id="vida_3" src="Assets/Imagens/coracao_cheio.png" alt="" srcset="">
         </div>
 
-        <div class="cronometro">Tempo restante: ?
+        <div class="cronometro">Tempo restante: <span id='cronometro'></span>
 
         </div>
     </div>
@@ -44,8 +44,9 @@
 
 <script>
     
+    document.getElementById('cronometro').innerHTML = tempo
 
-    setInterval(function(){
+    var cria_mosquito = setInterval(function(){
         posicao_aleatoria();
     },1500)
 </script>
