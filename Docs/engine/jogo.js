@@ -6,6 +6,25 @@ var largura = 0;
 var vidas = 1;
 var tempo = 10;
 
+var cria_mosquito_tempo = 1500
+
+var nivel = window.location.search
+
+
+//Ajustando os níveis
+
+if(nivel ==='normal'){
+    cria_mosquito_tempo = 2000
+
+}else if(nivel === 'medio'){
+    cria_mosquito_tempo = 1500
+
+}else if(nivel === 'dificil'){
+    cria_mosquito_tempo = 500
+
+}
+
+
 function ajusta_tamanho_palco_jogo(){
     altura = window.innerHeight;
     largura = window.innerWidth;
@@ -87,7 +106,7 @@ function posicao_aleatoria(){
   
     document.body.appendChild(mosquito)
 
-    console.log(lado_aleatorio());
+    
     
 }
 
