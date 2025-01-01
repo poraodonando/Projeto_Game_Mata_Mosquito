@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+    <!--CSS-->
+    
+    <link rel="stylesheet" href="/Docs/estilo/estilo.css">
+    
+
+    
+</head>
+
+
+
+<body onresize="ajusta_tamanho_palco_jogo()">
+
+    <div class="painel">
+        <div class="vidas">
+            <img id="vida_1" src="Assets/Imagens/coracao_cheio.png" alt="" srcset="">
+
+            <img id="vida_2" src="Assets/Imagens/coracao_cheio.png" alt="" srcset="">
+
+            <img id="vida_3" src="Assets/Imagens/coracao_cheio.png" alt="" srcset="">
+        </div>
+
+        <div class="cronometro">Tempo restante: <span id='cronometro'></span>
+
+        </div>
+    </div>
+    
+    
+    
+</body>
+</html>
+
+
+<!--JavaScript-->
+
+<script src="/Docs/engine/jogo.js"></script>
+
+<script>
+    
+    document.getElementById('cronometro').innerHTML = tempo
+
+    var cria_mosquito = setInterval(function(){
+        posicao_aleatoria();
+    },1500)
+</script>
